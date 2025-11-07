@@ -36,7 +36,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
     sudo apt-get install -y apache2
-    echo "Hello from Vagrant" | sudo tee /var/www/html/index.html
+    echo "Hello from Vagrant setup" | sudo tee /var/www/html/index.html
   SHELL
 
   # Create a public network, which generally matched to bridged network.
